@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Omkar Dongare • Portfolio</title>
+    <meta name="description" content="Omkar Dongare — AI/ML Enthusiast, Cloud & App Developer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%230b1220'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-size='72' fill='%23fff' font-family='Poppins, Arial'%3EO%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#hero">OD</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero" aria-label="Intro">
+        <div class="hero-content">
+          <div class="photo-wrap">
+            <img src="C:\Omkar Portfolio\Omkar Portfolio\omkar.png" alt="Omkar Dongare" class="photo" />
+            <span class="blob"></span>
+          </div>
+          <div class="hero-text">
+            <h1 class="name">OMKAR DONGARE</h1>
+            <h2 class="subtitle"><span id="typed"></span></h2>
+            <div class="cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+            <div class="connect-bar" aria-label="Let’s connect">
+              <a class="icon-btn gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=dongareomkar1618@gmail.com" target="_blank" rel="noreferrer noopener" title="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 18H4a2 2 0 0 1-2-2V8.4l10 6.25L22 8.4V16a2 2 0 0 1-2 2Zm0-12H4l8 5 8-5Z"/></svg>
+              </a>
+              <a class="icon-btn linkedin" href="https://www.linkedin.com/in/omkardongare18/" target="_blank" rel="noreferrer noopener" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 7.5A1.94 1.94 0 1 1 5 5.56 1.94 1.94 0 0 1 6.94 7.5ZM5.5 9h2.9v10.5H5.5ZM10.2 9h2.77v1.45h.04a3.04 3.04 0 0 1 2.73-1.5c2.92 0 3.46 1.92 3.46 4.41v6.14h-2.9v-5.45c0-1.3 0-2.98-1.82-2.98s-2.1 1.42-2.1 2.88v5.55h-2.9Z"/></svg>
+              </a>
+              <a class="icon-btn github" href="https://github.com/omkardongaree18" target="_blank" rel="noreferrer noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.77-1.61-2.67-.31-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.24-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.69.24 2.94.12 3.25.77.85 1.24 1.93 1.24 3.24 0 4.62-2.8 5.63-5.47 5.93.43.37.82 1.11.82 2.25v3.33c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+              </a>
+              <a class="icon-btn phone" href="tel:+919082370064" title="Call">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.24 1.02l-2.2 2.2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to About">▿</a>
+      </section>
+
+      <section id="about" class="section container">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-grid">
+          <div>
+            <p class="lead">
+              I am a Computer Science graduate passionate about AI/ML, cloud technologies, and app development. I love turning complex problems into innovative, data-driven solutions that make real-world impact.
+            </p>
+            <p>
+              My projects have strengthened my skills in Flutter, Firebase, AI-powered chatbots, and cloud integration, backed by a solid foundation in programming, data structures, and system design. I continuously strive to learn and adapt to emerging technologies.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="C:\Omkar Portfolio\Omkar Portfolio\Omkar Dongare  new Resume (1).pdf" target="_blank" rel="noreferrer noopener">View CV</a>
+              <a class="btn ghost" href="#contact">Let’s Connect</a>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="num" data-count="4">0</div>
+              <div class="label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="9.05">0</div>
+              <div class="label">CGPA</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="1">0</div>
+              <div class="label">Research Paper</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="1">0</div>
+              <div class="label">Conference Role</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <title>Skills Section</title>
+  <style>
+    body {
+      background: #0f1629;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.5));
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+    }
+
+    .skill span {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Skills</h2>
+  <section id="skills" class="section container">
+  <div class="skills-container">
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><span>HTML5</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><span>CSS3</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><span>JavaScript</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/><span>React</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"/><span>Flutter</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"/><span>Kotlin</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/><span>Java</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><span>Python</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/><span>Firebase</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/><span>MongoDB</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/><span>Node.js</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/><span>Git</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" style="filter: brightness(0) invert(1);"/><span>GitHub</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/><span>Docker</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"/><span>Jenkins</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"/><span>Jira</span></div>
+    <div class="skill"><img src="https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png" alt="Postman"/><span>Postman</span></div>
+    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/1372/1372756.png" alt="REST APIs"/><span>REST APIs</span></div>
+    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI ML"/><span>AI & ML</span></div>
+    </section>
+  </div>
+</body>
+      <section id="projects" class="section container">
+        <h3 class="section-title">Projects</h3>
+        <div class="grid cards">
+          <article class="card reveal tilt">
+            <div class="card-body">
+              <h4>Smart Financial Advisor App</h4>
+              <p class="meta">Flutter • Firebase • Dialogflow • Plaid API</p>
+              <p>
+                AI-powered advisor for personalized investment insights, transaction tracking, and a chatbot, with secure bank integration and real-time data handling.
+              </p>
+              <div class="tags"><span>AI</span><span>FinTech</span><span>Chatbot</span></div>
+              <div class="proj-actions">
+                <a class="btn small primary" href="#" target="_blank" rel="noreferrer noopener">View</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal tilt">
+            <div class="card-body">
+              <h4>Music App</h4>
+              <p class="meta">Java • Android Studio</p>
+              <p>
+                Music streaming app with audio file management, smooth playback via multithreading, and an intuitive UI using OOP principles.
+              </p>
+              <div class="tags"><span>Android</span><span>Multithreading</span></div>
+              <div class="proj-actions">
+                <a class="btn small primary" href="#" target="_blank" rel="noreferrer noopener">View</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal tilt">
+            <div class="card-body">
+              <h4>Grocery Store Management Website</h4>
+              <p class="meta">ASP.NET • MVC • SQL</p>
+              <p>
+                Full‑stack system to manage inventory, customer orders, and transactions with secure authentication and robust SQL database design.
+              </p>
+              <div class="tags"><span>Web</span><span>SQL</span></div>
+              <div class="proj-actions">
+                <a class="btn small primary" href="#" target="_blank" rel="noreferrer noopener">View</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <h3 class="section-title">Education</h3>
+        <div class="timeline">
+          <div class="time-item reveal">
+            <h4>Bachelor of Science, Computer Science</h4>
+            <p class="meta">Kishinchand Chellaram College, Mumbai • CGPA: 9.05 • 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="section container">
+        <h3 class="section-title">Extracurricular Activities</h3>
+        <ul class="activities-list">
+          <li class="activity reveal">
+            <span class="dot"></span>
+            <div>
+              <strong>Organizing Committee Member</strong>
+              <div class="meta">International Conference on Artificial Intelligence — KC College</div>
+            </div>
+          </li>
+          <li class="activity reveal">
+            <span class="dot"></span>
+            <div>
+              <strong>Team Member</strong>
+              <div class="meta">Tech Club, Fiestron 2024–2025 — KC College</div>
+            </div>
+          </li>
+          <li class="activity reveal">
+            <span class="dot"></span>
+            <div>
+              <strong>Group Leader</strong>
+              <div class="meta">Classroom Presentation Group — KC College</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="publications" class="section container">
+        <h3 class="section-title">Research & Publications</h3>
+        <article class="card reveal">
+          <div class="card-body">
+            <h4>Smart Financial Advisor System</h4>
+            <p class="meta">
+              Research paper exploring AI/ML for personalized investment suggestions and financial planning. Presented at KC College on 31 Jan, 2025.
+            </p>
+            <a class="btn small primary" href="C:\Omkar Portfolio\Omkar Portfolio\Finx Research Paper.pdf" target="_blank" rel="noreferrer noopener">See Paper</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact" class="section container">
+        <h3 class="section-title">Contact</h3>
+        <form id="contactForm" class="contact-form">
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <textarea id="message" rows="4" placeholder="Your message"></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Omkar Dongare • Built with love and coffee.</p>
+    </footer>
+
+    <button id="backTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
